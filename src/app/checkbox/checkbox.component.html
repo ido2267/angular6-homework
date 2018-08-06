@@ -1,0 +1,14 @@
+
+
+<input type="text" #txt1   (keyup)="changeData(txt1.value ,1)"  > {{dataText1}} <br>
+
+
+<input type="text" #txt2   (keyup)="changeData(txt2.value,2 )"  >
+
+{{dataText2}} <br>
+
+
+ <br> <br> <br>
+ <input type="radio" name="rad" (click)="bol='true' ">
+  <input type="radio" name="rad" (click)="bol='' ">
+  <input  type="checkbox" #chk [checked]=bol>
