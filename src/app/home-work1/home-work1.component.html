@@ -1,0 +1,16 @@
+
+
+<input type="text" #txt1 >  <br>
+<button  #btn1 (click)="addComponent(txt1.value)"  >Insert Value</button>    <br>
+
+<select [style.font-size]="fontSize" >
+    <option *ngFor="let val of arrayVal"  > 
+     {{val}}
+    </option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <input  type="checkbox" #chk1 [checked]="bol" (click)="changeFontSize()"> Font Size

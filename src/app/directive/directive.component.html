@@ -1,0 +1,32 @@
+
+<!-- exercise 3.1 -->
+ <br>
+<input [style.background-color]="backColor" type="text" #txt  (keyup)=" changeBackgroundColor(txt.value)"  >   <br>
+
+<!-- exercise 3.2 -->
+<br/>
+<input type="checkbox" #red [checked]="redCheck"  (change)="redCheck=red.checked" > red <br>
+<input type="checkbox" #green [checked]="greenCheck"  (change)="greenCheck=green.checked" > green <br>
+<input type="checkbox" #blue [checked]="blueCheck"  (change)="blueCheck=blue.checked" > blue <br>
+
+
+<ul>
+<li *ngIf="redCheck">Red</li><br>
+<li *ngIf="greenCheck">Green</li><br>
+<li *ngIf="blueCheck">Blue</li> 
+</ul>
+<!-- exercise 3.3 -->
+  <table border="1">
+    <th>Name </th> <th>Age </th> <th>city </th> 
+    <tr *ngFor="let per of person">
+      <td>{{per.name}}   </td><td>{{per.age}}   </td><td>{{per.city}}   </td>
+    </tr>
+  </table>
+<!-- exercise 3.4 -->
+  <ul>
+<li *ngFor="let per of person">{{per.name}}
+  <ul> Age  {{per.age}} </ul>
+  <ul> City {{per.city}} </ul>
+</li>
+</ul> 
+
