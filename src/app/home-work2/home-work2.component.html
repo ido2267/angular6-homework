@@ -1,0 +1,33 @@
+<table border="1">
+    <th>Employee Name </th> <th>Employee Age </th><th>Phone numbers</th>
+ 
+    <tr *ngFor="let Item of employee">
+      <td>{{Item.name}}   </td> <td>{{Item.age}}   </td> 
+    
+            <table border="1" >
+                    <th>Mobile number</th><th>Home number</th><th>Fax number</th> 
+                     <tr *ngFor="let phoneNum of Item.Phones">
+                            <td>{{phoneNum.mobileNumber}} </td> 
+                            <td>    {{phoneNum.homeNumber}} </td> 
+                                    <td> {{phoneNum.faxNumber}}  </td> 
+                    </tr>
+            </table>
+    
+       
+    </tr>
+  </table>
+
+  <ul>
+        <li *ngFor="let Item of employee">  {{Item.name}}   {{Item.age}}   
+                <ul>  <li *ngFor="let phoneNum of Item.Phones">
+                         home: {{phoneNum.mobileNumber}}
+                         mobile: {{phoneNum.homeNumber}}  
+                         fax:  {{phoneNum.faxNumber}}   
+
+                </li>
+                
+                </ul>
+                
+              </li>
+
+  </ul>

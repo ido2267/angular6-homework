@@ -6,6 +6,7 @@ import { CheckboxComponent } from './checkbox/checkbox.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { SalesComponent } from './sales/sales.component';
 import { HomeWork1Component } from './home-work1/home-work1.component';
+import { HomeWork2Component } from './home-work2/home-work2.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { HomeWork1Component } from './home-work1/home-work1.component';
     CheckboxComponent,
     DirectiveComponent,
     SalesComponent,
-    HomeWork1Component
+    HomeWork1Component,
+    HomeWork2Component
   ],
   imports: [
     BrowserModule
