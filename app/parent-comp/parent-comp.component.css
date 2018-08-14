@@ -1,0 +1,39 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;  
+    max-height: 960px;
+    background-color: #6147d6;
+    border: 1px solid black;
+}
+
+#btn{
+
+    margin-left:  50%;
+margin-top: 5%;
+}
+#children{
+    display: flex;
+}
+/*
+app-child-comp1 {
+    background-color: #5389ee;
+    width:30%;
+    height: 100px;
+    border: 1px solid black;
+        grid-column-start: 1;
+        grid-column-end: five;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      
+}
+app-child-comp2 {
+    width:30%;
+    height: 80%;
+    background-color: #ddbf16;
+    border: 1px solid black;
+    grid-column-start: 6;
+    grid-column-end: auto;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  
+}  */

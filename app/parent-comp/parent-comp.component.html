@@ -1,0 +1,11 @@
+<body>
+  
+
+
+ <input id="btn" type="button" value="submit" (click)="moveDataToChild2()">
+</body>
+ <app-child-comp1  (textToParent)="getData($event)" >
+
+ </app-child-comp1> <app-child-comp2  [dataFromParent]="dataToChild" ></app-child-comp2>
+ 
+
